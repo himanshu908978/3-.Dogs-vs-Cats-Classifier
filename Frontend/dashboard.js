@@ -7,11 +7,11 @@ const firstb1 = document.querySelector(".firstb1");
 const results = document.querySelector(".results");
 
 results.addEventListener("click",()=>{
-    window.location.href = "results.html";
+    everythingcontainer1.style.display = "block";
 })
 
 firstb1.addEventListener("click",()=>{
-    window.location.href = `about.html`;
+    Everything.style.display = "flex";
 })
 
 
@@ -66,4 +66,21 @@ uploadimg.addEventListener("drop",(e)=>{
     e.preventDefault();
     input1.files = e.dataTransfer.files;
     uploadimginp();
+})
+
+
+
+const projectname = document.querySelector(".projectname");
+const Everything = document.querySelector(".Everything");
+
+projectname.addEventListener("click",()=>{
+    Everything.style.display = "none";
+});
+
+
+const projectname1 = document.querySelector(".projectname1");
+const everythingcontainer1 = document.querySelector(".everythingcontainer1");
+
+projectname1.addEventListener("click",()=>{
+    everythingcontainer1.style.display = "none";
 })
