@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile,File
 from fastapi.middleware.cors import CORSMiddleware
-from .model import Inference
+from model import Inference
 
 app = FastAPI()
 labels = ['CAT', 'DOG']
